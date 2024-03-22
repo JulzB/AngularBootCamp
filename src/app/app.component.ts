@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularBootCamp';
-
-  active: boolean = false;
-
-  toggleActive() {
-    this.active = !this.active;
-  }
+  
 }
