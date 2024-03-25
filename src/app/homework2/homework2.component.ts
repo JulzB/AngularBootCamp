@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class Homework2Component {
 
-  strings: string[] = ['A', 'B', 'C','C'];
+  strings: string[] = ['A', 'B', 'C'];
 
 }
