@@ -1,0 +1,25 @@
+<div class="app-homework2">
+    <h2>NgFor</h2>
+    <ul>
+        <li *ngFor="let string of strings">
+            {{ string }}
+        </li>
+    </ul>
+
+    <h2>NgIf</h2>
+    <ul>
+        <ng-container *ngFor="let string of strings">
+            <li *ngIf="string !== 'B'">{{ string }}</li>
+        </ng-container>
+    </ul>
+
+    <h2>NgSwitch</h2>
+    <ul>
+        <li *ngFor="let string of strings" [ngSwitch]="string">
+            <span *ngSwitchCase="'A'">1</span>
+            <span *ngSwitchCase="'B'">2</span>
+            <span *ngSwitchCase="'C'">3</span>
+            <span *ngSwitchDefault>0</span>
+        </li>
+    </ul>
+</div>
